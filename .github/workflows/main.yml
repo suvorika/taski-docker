@@ -51,8 +51,7 @@ jobs:
           python -m flake8 backend/
           cd backend/
           python manage.py test
-  login__to_docker_hub:
-    login:
+  login:
     runs-on: ubuntu-latest
     steps:
       - name: Login to Docker Hub
